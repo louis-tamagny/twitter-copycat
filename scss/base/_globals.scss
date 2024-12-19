@@ -1,0 +1,30 @@
+.subtle {
+  color: $grey;
+  font-size: 0.8rem;
+}
+
+a {
+  color: $light-blue;
+  cursor: pointer;
+
+  &:active {
+    font-weight: bolder;
+  }
+}
+
+strong {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.icon {
+  cursor: pointer;
+
+  &:active {
+    color: $red;
+    font-weight: bolder;
+    svg path {
+      fill: $red;
+    }
+  }
+}

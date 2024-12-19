@@ -1,0 +1,75 @@
+.tweet {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid $light-grey;
+  border-top: 1px solid $light-grey;
+
+  &-comment {
+    font-size: 0.8rem;
+    color: $dark-grey;
+
+    &-icon {
+      align-self: end;
+    }
+  }
+
+  &-contents {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 0.3rem;
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      padding: 0.2rem 0rem;
+    }
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        flex: 0;
+      }
+    }
+  }
+
+  &-author {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+  }
+
+  &-content-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  &-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: $dark-grey;
+
+    div {
+      align-items: center;
+      vertical-align: center;
+    }
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    gap: 0.5rem;
+  }
+
+  &-vertical-line {
+    flex-grow: 1;
+  }
+}
